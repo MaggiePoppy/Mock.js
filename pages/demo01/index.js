@@ -1,16 +1,4 @@
-require('./index.less')
-
-import $ from 'jquery'
-import Mock from 'mockjs'
-
-function createMock(title, config) {
-  let data = Mock.mock(config)
-  let $title = $(`<h3>${ title }</h3>`)
-  let $container = $('<pre></pre>')
-
-  $container.html(JSON.stringify(data, null, 4))
-  $('#mock').append($title).append($container)
-}
+import createMock from 'util/create-mock'
 
 // 规则查看地址：https://github.com/nuysoft/Mock/wiki/Syntax-Specification
 // 生成规则 有 7 种格式：

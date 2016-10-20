@@ -58,13 +58,14 @@ module.exports = {
       // 不希望webpack处理的模块的正则表达式
     ]
   },
-  // resolve: {
-  //   root: srcPath,  //绝对路径
-  //   extensions: ['', '.js', '.json', '.scss'],
-  //   alias: {
-  //     // 模块映射表
-  //   }
-  // },
+  resolve: {
+    // root: srcPath,  //绝对路径
+    // extensions: ['', '.js', '.json', '.scss'],
+    alias: {
+      // 模块映射表
+      util: path.resolve(__dirname, 'util')
+    }
+  },
 
   // babel使用的插件
   babel: {
