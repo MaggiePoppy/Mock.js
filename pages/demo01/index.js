@@ -1,6 +1,7 @@
 import createMock from 'util/create-mock'
 
 // 规则查看地址：https://github.com/nuysoft/Mock/wiki/Syntax-Specification
+// 示例查看地址：http://mockjs.com/examples.html#DPD
 // 生成规则 有 7 种格式：
 // 'name|min-max': value
 // 'name|count': value
