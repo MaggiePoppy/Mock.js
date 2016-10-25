@@ -1,8 +1,8 @@
 import $ from 'jquery'
 import Mock from 'mockjs'
 
-module.exports = function createMock(title, config) {
-  let data = Mock.mock(config)
+module.exports = function createMock(title, template) {
+  let data = Mock.mock(template)
   let $title = $(`<h3>${ title }</h3>`)
   let $container = $('<pre></pre>')
 
